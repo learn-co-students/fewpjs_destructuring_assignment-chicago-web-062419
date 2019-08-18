@@ -10,6 +10,8 @@ const muppet = {
   partner: 'Miss Piggy'
 };
 
+
+
 const k_muppet = {
   k_name: 'Kermit',
   k_color: 'green',
@@ -24,6 +26,8 @@ const k_muppet = {
   k_job: 'Host of The Muppet Show',
   k_partner: 'Miss Piggy'
 };
+
+
 
 // Strings
 
@@ -47,3 +51,51 @@ const k_muppet = {
 
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+
+// const dogsName = 'Sir Woody BarksALot'
+// const [title, firstName, lastName] = 'Sir Woody BarksALot'.split(' ')
+// console.log(title, firstName, lastName) // Sir Woody BarksALot
+
+// const farmAnimals = 'cow horse sheep pig chicken'
+
+
+const [moo, neigh, baa, oink, cluck] = 'cow horse sheep pig chicken'.split(' ')
+// console.log(moo);
+// console.log(neigh);
+
+
+// Bessie, Dolly, Babe, and Little.
+// - horse 
+
+const [Bessie, , Dolly, Babe, Little] = 'cow horse sheep pig chicken'.split(' ')
+// console.log(Bessie, Dolly, Babe, Little)
+
+
+// use color variables of black_and_white, black, and pink.
+
+const [black_and_white, ,black, pink, ,] = 'cow horse sheep pig chicken'.split(' ')
+// console.log(pink)
+
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const [red, orange, yellow, green, blue, indigo, violet] = colors 
+// console.log(colors)
+const [r, o, y, g, b, , v] = colors 
+// console.log(r)
+
+const [, , , , , indg, ,] = colors
+// console.log(indg)
+
+const {name, color, song, job, partner} = muppet
+// console.log(name)
+
+const {song_2, song_4} = k_muppet.k_album.the_muppet_movie
+// console.log(song_2)
+
+const {k_job, k_partner} = k_muppet
+// console.log(k_job)
+
+
+
+
+
